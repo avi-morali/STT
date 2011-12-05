@@ -17,7 +17,7 @@ namespace STT.Models
             Content = "";
             Date = DateTime.Now;
         }
-
+        h
         public Message(int id, string content, string date)
         {
             IFormatProvider fp = new System.Globalization.CultureInfo("en-US");
