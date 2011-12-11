@@ -1,0 +1,5 @@
+D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\bin\STT.dll
+D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\bin\STT.pdb
+D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\obj\Debug\ResolveAssemblyReference.cache
+D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\obj\Debug\STT.dll
+D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\obj\Debug\STT.pdb
