@@ -18,7 +18,7 @@ namespace STT.Models
             {
                 table[i] = new int[6];
             }
-            Student_ID = -1;
+            Student_ID =  -1;
         }
         public Schedule(long id,  int rows)
         {
