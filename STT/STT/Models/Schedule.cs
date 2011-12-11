@@ -20,7 +20,7 @@ namespace STT.Models
             }
             Student_ID = -1;
         }
-        public Schedule(long id, int rows)
+        public Schedule(long id,  int rows)
         {
             this.table = new int[rows][];
             for (int i = 0; i < rows; i++)
