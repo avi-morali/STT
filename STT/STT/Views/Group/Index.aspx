@@ -7,23 +7,19 @@
     <title>Index</title>
 </head>
 <body>
-    <% using (Html.BeginForm()) {%>
-        <%: Html.ValidationSummary(true) %>
-
-        <fieldset>
-            <legend>Fields</legend>
-            
-            <p>
-                <input type="submit" value="Create" />
-            </p>
-        </fieldset>
-
-    <% } %>
-
+    <form id="form1" runat="server">
     <div>
-        <%: Html.ActionLink("Back to List", "Index") %>
-    </div>
+        <asp:Table runat="server" ID="myTable" Height="120px" Width="195px"  BorderWidth="5" BorderColor = "#000000">
 
+            <asp:TableRow ID="TblRow1" runat="server" >
+
+                <asp:TableCell ID="TblCell1" runat="server"></asp:TableCell>
+                <asp:TableCell ID="TableCell1" runat="server"></asp:TableCell>
+
+
+            </asp:TableRow>
+        </asp:Table>
+    </div>
+    </form>
 </body>
 </html>
-

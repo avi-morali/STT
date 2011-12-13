@@ -8,8 +8,8 @@ namespace STT.Models
     public class Schedule
     {
 
-        private int[][] table;
-        private long Student_ID;
+        public int[][] table;
+        public long Student_ID;
 
         public Schedule()
         {
@@ -29,6 +29,7 @@ namespace STT.Models
             }
             Student_ID = id;
         }
+
 
     }
 }
