@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using STT.Models;
 
 namespace STT.Controllers
 {
@@ -13,7 +14,8 @@ namespace STT.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            Schedule sc = new Schedule();
+            return View(sc);
         }
 
     }
