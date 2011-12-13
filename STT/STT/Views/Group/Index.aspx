@@ -9,14 +9,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Table runat="server" ID="myTable" Height="120px" Width="195px"  BorderWidth="5" BorderColor = "#000000">
-
+        <asp:Table runat="server" ID="myTable" Height="120px" Width="195px" GridLines="horizontal" HorizontalAlign="Center"  BorderWidth="5" BorderColor = "Black">
             <asp:TableRow ID="TblRow1" runat="server" >
-
-                <asp:TableCell ID="TblCell1" runat="server"></asp:TableCell>
-                <asp:TableCell ID="TableCell1" runat="server"></asp:TableCell>
-
-
+                <asp:TableCell   BorderWidth="2" HorizontalAlign=Center ID="TblCell1" runat="server">Cell 1</asp:TableCell>
+                <asp:TableCell BorderWidth="2" HorizontalAlign=Center ID="TableCell3" runat="server">Cell 2</asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow ID="TableRow2" runat="server" >
+                <asp:TableCell BorderWidth="2" HorizontalAlign=Center ID="TableCell2" runat="server">Cell 3</asp:TableCell>
+                   <asp:TableCell BorderWidth="2" HorizontalAlign=Center ID="TableCell4" runat="server">Cell 4</asp:TableCell>
             </asp:TableRow>
         </asp:Table>
     </div>
