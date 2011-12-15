@@ -1,5 +1,11 @@
 /* Styles for validation helpers
 -----------------------------------------------------------*/
+body
+{
+    font-family: Arial, David, Verdana;
+     font-size: 20px;
+    direction: rtl;
+}
 .field-validation-error
 {
     color: #ff0000;
@@ -25,4 +31,18 @@
 .validation-summary-valid
 {
     display: none;
+}
+
+.tbl
+{
+    width: 1200px;
+    height: 500px;
+    border: 3px solid #000000;
+    border-collapse: collapse; 
+}
+
+.tbl td
+{
+    border: 3px solid #000000;
+    border-collapse: collapse;
 }
