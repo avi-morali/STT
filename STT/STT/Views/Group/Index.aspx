@@ -7,6 +7,7 @@
     <link href="../../Content/Site.css" rel="Stylesheet" type="text/css" />
     <title>Index</title>
 </head>
+
 <body>
     <form id="form1" runat="server">
     <div align="center">
