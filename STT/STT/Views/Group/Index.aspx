@@ -13,7 +13,7 @@
     <div align="center">
         <%  int row, col; %>
         <table class="tbl">
-        <tr>
+        <tr class="headline_table">
         <td></td>
         <td>ראשון</td>
         <td>שני</td>
@@ -22,15 +22,26 @@
         <td>חמישי</td>
         <td>שישי</td>
         </tr>
+
         <% for (row = 0;row < 14;row++) 
         { %> 
         <tr>
             <%for (col = 0; col < 7; col++)
               { %>
-              <td dir=ltr>
-                <%if (col == 0) Response.Write((row + 8) + ":00 - " + (row + 8) + ":45");
-                  else Response.Write("None"); %>
-              </td>
+              <%if (row % 2 == 0)
+                { %>
+                <td dir=ltr class="tbl_cells_even">
+                    <%if (col == 0) Response.Write((row + 8) + ":00 - " + (row + 8) + ":45"); 
+                        else Response.Write(" "); %>
+                </td>
+                <%}
+                else
+                {%>
+                 <td dir=ltr class="tbl_cells_odd">
+                    <%if (col == 0) Response.Write((row + 8) + ":00 - " + (row + 8) + ":45"); 
+                        else Response.Write(" "); %>
+                </td>
+                <%} %>
             <%} %>
         </tr>
         <% } %>
