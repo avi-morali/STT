@@ -15,21 +15,24 @@ namespace STT.Models
         {
             Id = 0;
             Content = "";
-            Date = DateTime.Now;
+            Date = DateTime.Today;
         }
 
         public Message(int id, string content, string date)
         {
-            IFormatProvider fp = new System.Globalization.CultureInfo("en-US");
 
             Id = id;
             Content = content;
-            Date = DateTime.ParseExact(date, "MM/dd/yyyy", fp);
+            Date = Convert.ToDateTime(date);
 
         }
 
         public void printMessage()
         {
         }
+
+        public int getId() { return Id; }
+        public String getContent() { return Content; }
+        public DateTime getDate() { return Date; }
     }
 }

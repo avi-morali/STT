@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6333e4e5-e999-4ff0-b70b-879cd4081582" name="Hizmi@HIZMI-TTAUJQVVE 2011-12-20 18:29:57" runUser="HIZMI-TTAUJQVVE\Hizmi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="261eed70-0f26-4a6a-85b5-86fc8fc0123a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Hizmi_HIZMI-TTAUJQVVE 2011-12-20 18_29_57">
+      <DeploymentItem filename="D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT\bin\STT.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-20T18:29:57.6093750+02:00" queuing="2011-12-20T18:29:59.1875000+02:00" start="2011-12-20T18:29:59.3906250+02:00" finish="2011-12-20T18:30:01.3750000+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ScheduleConstructorTest1" storage="d:\בת-אל\לימודים\תשעב\הנדסת תוכנה\stt\stt\stt_unittest\bin\debug\stt_unittest.dll" id="aecf002f-bd5b-6641-9d66-ec52404705f1">
+      <Execution id="a38acd40-4477-417e-9481-fa741925f637" />
+      <TestMethod codeBase="D:/בת-אל/לימודים/תשעב/הנדסת תוכנה/STT/STT/STT_UnitTest/bin/Debug/STT_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="STT_UnitTest.ScheduleTest, STT_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ScheduleConstructorTest1" />
+      <AspNet webSiteUrl="http://localhost:50113/">
+        <Host pathToWebApp="D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="printMessageTest" storage="d:\בת-אל\לימודים\תשעב\הנדסת תוכנה\stt\stt\stt_unittest\bin\debug\stt_unittest.dll" id="2953c9fa-7f47-9c40-25c5-e0afe1aae32c">
+      <Execution id="293faf3e-739f-4a88-8623-522937a4054f" />
+      <TestMethod codeBase="D:/בת-אל/לימודים/תשעב/הנדסת תוכנה/STT/STT/STT_UnitTest/bin/Debug/STT_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="STT_UnitTest.MessageTest, STT_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="printMessageTest" />
+      <AspNet webSiteUrl="http://localhost:50113/">
+        <Host pathToWebApp="D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="MessageConstructorTest" storage="d:\בת-אל\לימודים\תשעב\הנדסת תוכנה\stt\stt\stt_unittest\bin\debug\stt_unittest.dll" id="577e66a3-82e5-5aec-b8dc-fcd752e90060">
+      <Execution id="32190411-b4a1-417b-b305-bbe7921b983e" />
+      <TestMethod codeBase="D:/בת-אל/לימודים/תשעב/הנדסת תוכנה/STT/STT/STT_UnitTest/bin/Debug/STT_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="STT_UnitTest.MessageTest, STT_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MessageConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:50113/">
+        <Host pathToWebApp="D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ScheduleConstructorTest" storage="d:\בת-אל\לימודים\תשעב\הנדסת תוכנה\stt\stt\stt_unittest\bin\debug\stt_unittest.dll" id="f5e999b9-4e2b-979c-e722-ec2444d663d8">
+      <Execution id="b32c193d-ce25-4070-b3bf-de8a26da093a" />
+      <TestMethod codeBase="D:/בת-אל/לימודים/תשעב/הנדסת תוכנה/STT/STT/STT_UnitTest/bin/Debug/STT_UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="STT_UnitTest.ScheduleTest, STT_UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ScheduleConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:50113/">
+        <Host pathToWebApp="D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="577e66a3-82e5-5aec-b8dc-fcd752e90060" executionId="32190411-b4a1-417b-b305-bbe7921b983e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2953c9fa-7f47-9c40-25c5-e0afe1aae32c" executionId="293faf3e-739f-4a88-8623-522937a4054f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5e999b9-4e2b-979c-e722-ec2444d663d8" executionId="b32c193d-ce25-4070-b3bf-de8a26da093a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aecf002f-bd5b-6641-9d66-ec52404705f1" executionId="a38acd40-4477-417e-9481-fa741925f637" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="32190411-b4a1-417b-b305-bbe7921b983e" testId="577e66a3-82e5-5aec-b8dc-fcd752e90060" testName="MessageConstructorTest" computerName="HIZMI-TTAUJQVVE" startTime="2011-12-20T18:29:59.9062500+02:00" endTime="2011-12-20T18:30:01.0312500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32190411-b4a1-417b-b305-bbe7921b983e">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:50113/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_MessageConstructorTe.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="HIZMI-TTAUJQVVE\WebRequestResponse_MessageConstructorTe.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="293faf3e-739f-4a88-8623-522937a4054f" testId="2953c9fa-7f47-9c40-25c5-e0afe1aae32c" testName="printMessageTest" computerName="HIZMI-TTAUJQVVE" startTime="2011-12-20T18:30:01.0625000+02:00" endTime="2011-12-20T18:30:01.1093750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="293faf3e-739f-4a88-8623-522937a4054f">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:50113/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_printMessageTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="HIZMI-TTAUJQVVE\WebRequestResponse_printMessageTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="b32c193d-ce25-4070-b3bf-de8a26da093a" testId="f5e999b9-4e2b-979c-e722-ec2444d663d8" testName="ScheduleConstructorTest" computerName="HIZMI-TTAUJQVVE" startTime="2011-12-20T18:30:01.1250000+02:00" endTime="2011-12-20T18:30:01.1718750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b32c193d-ce25-4070-b3bf-de8a26da093a">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:50113/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_ScheduleConstructorT.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="HIZMI-TTAUJQVVE\WebRequestResponse_ScheduleConstructorT.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="a38acd40-4477-417e-9481-fa741925f637" testId="aecf002f-bd5b-6641-9d66-ec52404705f1" testName="ScheduleConstructorTest1" computerName="HIZMI-TTAUJQVVE" startTime="2011-12-20T18:30:01.1718750+02:00" endTime="2011-12-20T18:30:01.3125000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a38acd40-4477-417e-9481-fa741925f637">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:50113/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_ScheduleConstructorT.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="HIZMI-TTAUJQVVE\WebRequestResponse_ScheduleConstructorT.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>

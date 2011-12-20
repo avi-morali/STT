@@ -1,0 +1,9 @@
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\bin\Debug\STT_UnitTest.dll
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\bin\Debug\STT_UnitTest.pdb
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\bin\Debug\STT.dll
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\bin\Debug\STT.pdb
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\obj\Debug\ResolveAssemblyReference.cache
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\obj\Debug\STT_UnitTest.dll
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\obj\Debug\STT_UnitTest.pdb
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\bin\Debug\nunit.framework.dll
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT_UnitTest\bin\Debug\nunit.framework.xml
