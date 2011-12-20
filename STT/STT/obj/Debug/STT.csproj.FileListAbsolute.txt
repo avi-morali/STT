@@ -3,3 +3,13 @@ D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תו�
 D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\obj\Debug\ResolveAssemblyReference.cache
 D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\obj\Debug\STT.dll
 D:\לימודים\הנדסת תוכנה\שנה ג\סמסטר ה\הנדסת תוכנה\STT\Code\STT\STT\obj\Debug\STT.pdb
+C:\Users\Pini Ben Nahum\Desktop\פרויקט הנדסת תוכנ\STT\STT\STT\STT\bin\STT.dll
+C:\Users\Pini Ben Nahum\Desktop\פרויקט הנדסת תוכנ\STT\STT\STT\STT\bin\STT.pdb
+C:\Users\Pini Ben Nahum\Desktop\פרויקט הנדסת תוכנ\STT\STT\STT\STT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Pini Ben Nahum\Desktop\פרויקט הנדסת תוכנ\STT\STT\STT\STT\obj\Debug\STT.dll
+C:\Users\Pini Ben Nahum\Desktop\פרויקט הנדסת תוכנ\STT\STT\STT\STT\obj\Debug\STT.pdb
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT\bin\STT.dll
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT\bin\STT.pdb
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT\obj\Debug\ResolveAssemblyReference.cache
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT\obj\Debug\STT.dll
+D:\בת-אל\לימודים\תשעב\הנדסת תוכנה\STT\STT\STT\obj\Debug\STT.pdb
