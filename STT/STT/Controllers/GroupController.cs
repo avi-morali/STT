@@ -14,7 +14,7 @@ namespace STT.Controllers
 
         public ActionResult Index()
         {
-            Schedule sc = new Schedule();
+            Schedule sc = new Schedule(1210,14);
             return View(sc);
         }
 

@@ -15,21 +15,21 @@ namespace STT.Models
             string connectionString = "Server=.\\SQLExpress;AttachDbFilename=D:\\לימודים\\הנדסת תוכנה\\שנה ג\\סמסטר ה\\הנדסת תוכנה\\STT\\Code\\JceDB.mdf;Database=JceDB; Trusted_Connection=Yes;";
             //string connectionString = "Server=.\\SQLExpress;AttachDbFilename=..//..//..//JceDB.mdf;Database=JceDB; Trusted_Connection=Yes;";
             
-            //try
-            //{
+            try
+            {
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-            /*}
+            }
             catch (Exception ex)
             {
                 if (connection != null)
                 {
                     connection.Dispose();
                 }
-            }*/
+            }
         }
 
-        public SqlDataReader queryExexute(string sql)
+        public SqlDataReader queryExecute(string sql)
         {
             SqlCommand sqlline = new SqlCommand(sql, connection);
             return sqlline.ExecuteReader();

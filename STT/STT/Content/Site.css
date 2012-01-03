@@ -46,6 +46,7 @@ body
 {
     border: 1px solid #000000;
     border-collapse: collapse;
+    width:120px;
     font-size:16px;
     border-style:dashed;
 }
@@ -66,4 +67,27 @@ body
 .tbl_cells_odd
 {
     background-color:#FFFFFF;
+}
+
+.tbl_student_details
+{
+    border: 1px solid #000000;
+}
+
+.tbl_student_details td
+{
+    padding-left:10px;
+    font-size:medium;
+    font-weight:bold;   
+}
+
+.tbl_courses
+{
+    border:0;
+}
+
+.tbl_courses td
+{
+    border:0;
+    font-size:small;
 }
