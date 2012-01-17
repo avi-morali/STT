@@ -18,87 +18,91 @@
 <body>
     <form id="form1" runat="server">
     <div align="center">
-    <span class="style1"><strong>Student Time Table</strong></span>
 
     <!--Variabels:-->
-    <%  string cells;
+    <%  string cells="tbl";
         string date = String.Format("{0:dd/MM/yyyy}", DateTime.Today);
       
         
     %>
 
     <!--Title:-->
-    <asp:Image ID="stt" ImageUrl="..\..\Images\STT_logo.png" runat="server" Height="48px" Width="152px" />   
-    <br />
-    <br />
-
-    <!--Student details:-->
-    <table class="tbl_student_details">
-    <tr>
-    <td>שם הסטודנט:</td>
-    <td><%=Model.Student_Name %></td>
-    <td>ת.ז:</td>
-    <td><%=Model.Student_ID %></td>
-<!--    <td>חוג:</td>
-    <td></td>   -->
-    <td>תאריך:</td>
-    <td><%=date %></td>
-    </tr>
+    <table width=100%>
+        <tr>
+            <td width=33%>
+            </td>
+            <td align="center" width=33%>
+                <span class="stt">Student Time Table</span>
+                <br />
+                <br />
+                <!--Student details:-->
+                <table class="tbl_student_details">
+                    <tr>
+                        <td>שם הסטודנט:</td>
+                        <td><%=Model.Student_Name %></td>
+                        <td>ת.ז:</td>
+                        <td><%=Model.Student_ID %></td>
+                        <td>תאריך:</td>
+                        <td><%=date %></td>
+                    </tr>
+                </table>
+            </td>
+            <td align=left width=33%>
+                <asp:Image ID="stt" ImageUrl="..\..\Images\STT_logo.png" runat="server" Height="100px"/> 
+            </td>
+        </tr>
     </table>
     <br />
-
 
     <!--Schedule:-->
         <%  int row, col; %>
         <table class="tbl">
         <tr class="headline_table">
-        <td></td>
-        <td>ראשון</td>
-        <td>שני</td>
-        <td>שלישי</td>
-        <td>רביעי</td>
-        <td>חמישי</td>
-        <td>שישי</td>
+            <td></td>
+            <td>ראשון</td>
+            <td>שני</td>
+            <td>שלישי</td>
+            <td>רביעי</td>
+            <td>חמישי</td>
+            <td>שישי</td>
         </tr>
 
-        <% for (row = 0;row < 14;row++) 
+        <% for (row = Model.start_time; row <= Model.end_time; row++) 
         { %> 
-        <tr>
-            <%for (col = -1; col < 6; col++)
-              { %>
-              <%if (row % 2 == 0)
-                    cells = "tbl_cells_even";
-                else
-                    cells = "tbl_cells_odd";
-                    %>
-                <td dir="ltr" class="<%=cells%>">
-                    <%if (col == -1) Response.Write((row + 8) + ":00 - " + (row + 8) + ":45");
-                      else
+            <tr>
+                <%for (col = -1; col < 6; col++)
+                  { 
+                    if (col == -1)
                       {%>
-                        
-                        <!--Cells-->
-                        <%if (Model.int_table[row][col] == 1)
-                          { %>
-                            
-                            <!--Course details-->
-                            <table class="tbl_courses">
-                                <tr><td><%=Model.c_table[row][col].Name%></td><td>הרצאה</td></tr>
-                                <tr><td></td><td><%=Model.c_table[row][col].Lecturer%></td></tr>
-                                <tr><td><%=Model.c_table[row][col].Class_Room%></td><td>כיתה</td></tr>
-                            </table>
+                        <td dir="ltr" class="time_col">
+                            <%Response.Write((row + 8) + ":00 - " + (row + 8) + ":45");%>
+                        </td>
+                    <%}
 
-                            <!--Button-->
-                            <asp:ImageButton ID="ImageButton1" ImageUrl="..\..\Images\Message.png" Width="20px" runat="server" />
-                            <asp:ImageButton ID="ImageButton2" ImageUrl="..\..\Images\exam.png" Width="33px" runat="server" />
-                            <asp:ImageButton ID="ImageButton4" ImageUrl="..\..\Images\exercise.png" Width="20px" runat="server" />
-                            <asp:ImageButton ID="ImageButton3" ImageUrl="..\..\Images\contact.png" Width="20px" runat="server" />
-                        <%}
-                          else Response.Write("&nbsp;");  
-                          %>
-                    <%} %>
-                </td>
-                <%} %>
-        </tr>
+                      else if (Model.int_table[row][col] != -1)
+                      { %>
+                        <td rowspan="<%=Model.int_table[row][col]%>" dir="ltr">   
+                            <!--Cells-->
+                            <%if (Model.int_table[row][col] != 0)
+                              { %> 
+                                <!--Course details-->
+                                <table class="tbl_courses">
+                                    <tr><td><%=Model.c_table[row][col].Name%></td><td><%if (Model.c_table[row][col].is_lecture) Response.Write("הרצאה"); else Response.Write("תרגול");%></td></tr>
+                                    <tr><td colspan=2><%=Model.c_table[row][col].Lecturer%></td></tr>
+                                    <tr><td><%=Model.c_table[row][col].Class_Room%></td><td>כיתה</td></tr>
+                                </table>
+
+                                <!--Button-->
+                                <asp:ImageButton ID="ImageButton1" ImageUrl="..\..\Images\Message.png" Width="20px" runat="server" />
+                                <asp:ImageButton ID="ImageButton2" ImageUrl="..\..\Images\exam.png" Width="33px" runat="server" />
+                                <asp:ImageButton ID="ImageButton4" ImageUrl="..\..\Images\exercise.png" Width="20px" runat="server" />
+                                <asp:ImageButton ID="ImageButton3" ImageUrl="..\..\Images\contact.png" Width="20px" runat="server" />
+                            <%}
+                              else Response.Write("&nbsp;");%>
+                        </td>
+                    <%}   
+                }%>
+                </tr>
         <% } %>
         </table>
     </div>

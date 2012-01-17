@@ -3,8 +3,10 @@
 body
 {
     font-family: Arial, David, Verdana;
-     font-size: 20px;
+    font-size: 20px;
     direction: rtl;
+    background-image:url('bac3.jpg');
+     
 }
 .field-validation-error
 {
@@ -38,7 +40,8 @@ body
     width: 1200px;
     height: 500px;
     border: 3px solid #000000;
-    border-collapse: collapse; 
+    border-collapse: collapse;
+    background-color:White;
 }
 
 
@@ -48,30 +51,28 @@ body
     border-collapse: collapse;
     width:120px;
     font-size:16px;
-    border-style:dashed;
+    height:100px;
 }
 
-.headline_table
+.headline_table td
 {
     /* background-color:#FF800D; */
     background-color:#CC1919;
     font-weight:bold;
     color:White;
+    height:10px;
 }
 
-.tbl_cells_even
+.time_col
 {
-    background-color:#FFC895;
+    background-color:#CC1919;
+    font-weight:bold;
+    color:White;    
 }
-
-.tbl_cells_odd
-{
-    background-color:#FFFFFF;
-}
-
 .tbl_student_details
 {
     border: 1px solid #000000;
+    background-color:White;
 }
 
 .tbl_student_details td
@@ -90,4 +91,12 @@ body
 {
     border:0;
     font-size:small;
+    height:auto;
+}
+
+.stt
+{
+    font-size:40px;
+    color:White;
+    font-weight:bold;
 }

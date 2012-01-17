@@ -16,7 +16,7 @@ namespace STT_UnitTest
             Schedule tar1 = new Schedule(id, rows);
             Schedule tar2 = new Schedule();
             Assert.AreEqual(tar1.Student_ID,tar2.Student_ID,"fail id");
-            Assert.AreEqual(tar1.table, tar2.table, "fail table");
+            Assert.AreEqual(tar1.c_table, tar2.c_table, "fail table");
         }
 
     }
