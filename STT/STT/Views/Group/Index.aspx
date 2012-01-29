@@ -98,7 +98,7 @@
 
                                 <!--Button-->
                                 <%if ((Model.c_table[row][col]._message) != null) {
-                                      message_content = Model.c_table[row][col]._message.getSubject() + ":\n\n" + Model.c_table[row][col]._message.getContent();
+                                      message_content = Model.c_table[row][col]._message.getSubject() + ":\n\n" + Model.c_table[row][col]._message.getContent().Replace("\\n", "\n");
                                       ImageButton1.ToolTip = message_content;
                                       %>
                                     <asp:ImageButton ID="ImageButton1" ImageUrl="..\..\Images\Message.png" Width="20px" runat="server"/> <%} %>
@@ -106,7 +106,7 @@
                                 <!--<asp:ImageButton ID="ImageButton2" ImageUrl="..\..\Images\exam.png" Width="33px" runat="server" />-->
 
                                  <%if ((Model.c_table[row][col]._exercise.getId()) != -1 && Model.c_table[row][col].is_lecture == false) {
-                                       message_content = Model.c_table[row][col]._exercise.getSubject() + ":\n\n" + Model.c_table[row][col]._exercise.getContent();
+                                       message_content = Model.c_table[row][col]._exercise.getSubject() + ":\n\n" + Model.c_table[row][col]._exercise.getContent().Replace("\\n", "\n");
                                        ImageButton4.ToolTip = message_content;
                                        %>
                                     <asp:ImageButton ID="ImageButton4" ImageUrl="..\..\Images\exercise.png" Width="20px" runat="server" /> <%}
