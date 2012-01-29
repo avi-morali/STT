@@ -8,10 +8,10 @@ namespace STT.Models
 {
     public class Message
     {
-        private int ID;
-        private string Content;
-        private DateTime Date;
-        private string subject;
+        protected int ID;
+        protected string Content;
+        protected DateTime Date;
+        protected string subject;
 
         public Message()
         {
@@ -37,6 +37,7 @@ namespace STT.Models
 
         public int getId() { return ID; }
         public String getContent() { return Content; }
+        public String getSubject() { return subject; }
         public DateTime getDate() { return Date; }
         
     }    

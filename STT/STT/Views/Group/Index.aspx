@@ -55,7 +55,9 @@
     <br />
 
     <!--Schedule:-->
-        <%  int row, col; %>
+        <%  int row, col;
+            String message_content;    
+        %>
         <table class="tbl">
         <tr class="headline_table">
             <td></td>
@@ -87,15 +89,29 @@
                               { %> 
                                 <!--Course details-->
                                 <table class="tbl_courses">
-                                    <tr><td><%=Model.c_table[row][col].Name%></td><td><%if (Model.c_table[row][col].is_lecture) Response.Write("הרצאה"); else Response.Write("תרגול");%></td></tr>
+                                    <tr><td colspan="2"><% Response.Write(Model.c_table[row][col].Name + " - ");
+                                            if (Model.c_table[row][col].is_lecture) Response.Write("הרצאה"); else Response.Write("תרגול");%>
+                                    </td></tr>
                                     <tr><td colspan=2><%=Model.c_table[row][col].Lecturer%></td></tr>
                                     <tr><td><%=Model.c_table[row][col].Class_Room%></td><td>כיתה</td></tr>
                                 </table>
 
                                 <!--Button-->
-                                <asp:ImageButton ID="ImageButton1" ImageUrl="..\..\Images\Message.png" Width="20px" runat="server" />
-                                <asp:ImageButton ID="ImageButton2" ImageUrl="..\..\Images\exam.png" Width="33px" runat="server" />
-                                <asp:ImageButton ID="ImageButton4" ImageUrl="..\..\Images\exercise.png" Width="20px" runat="server" />
+                                <%if ((Model.c_table[row][col]._message) != null) {
+                                      message_content = Model.c_table[row][col]._message.getSubject() + ":\n\n" + Model.c_table[row][col]._message.getContent();
+                                      ImageButton1.ToolTip = message_content;
+                                      %>
+                                    <asp:ImageButton ID="ImageButton1" ImageUrl="..\..\Images\Message.png" Width="20px" runat="server"/> <%} %>
+
+                                <!--<asp:ImageButton ID="ImageButton2" ImageUrl="..\..\Images\exam.png" Width="33px" runat="server" />-->
+
+                                 <%if ((Model.c_table[row][col]._exercise.getId()) != -1 && Model.c_table[row][col].is_lecture == false) {
+                                       message_content = Model.c_table[row][col]._exercise.getSubject() + ":\n\n" + Model.c_table[row][col]._exercise.getContent();
+                                       ImageButton4.ToolTip = message_content;
+                                       %>
+                                    <asp:ImageButton ID="ImageButton4" ImageUrl="..\..\Images\exercise.png" Width="20px" runat="server" /> <%}
+                                                                                                                                               ImageButton3.OnClientClick = "window.open('mailto:" + Model.c_table[row][col].email + "','email');";
+                                  %>
                                 <asp:ImageButton ID="ImageButton3" ImageUrl="..\..\Images\contact.png" Width="20px" runat="server" />
                             <%}
                               else Response.Write("&nbsp;");%>

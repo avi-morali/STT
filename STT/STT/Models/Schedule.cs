@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace STT.Models
 {
-    public class Schedule : Courses
+    public class Schedule
     {
 
         public int[][] int_table;

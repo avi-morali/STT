@@ -10,26 +10,24 @@ namespace STT.Models
     {
         public int ID;
         public string Name;
-        public int Lecturer;
+        public string Lecturer;
         public int Day; // Default = 0, Sun = 1, Mon = 2, Tue = 3, Wed = 4, Thu = 5, Fri = 6
         public int Start_time, duration;
-        public int message_id;
         public bool is_lecture;
         public Message _message;
         public Exercise _exercise;
         public string Class_Room;
+        public string email;
 
 
         public Courses()
         {
             ID = -1;
             Name = "None";
-            Lecturer = -1;
+            //Lecturer = -1;
             Day = 0;
             Start_time = 0;
             duration = 0;
-            _message = new Message();
-            _exercise = new Exercise();
         }
         
         public Courses(int TimeId)
@@ -40,6 +38,8 @@ namespace STT.Models
             SqlDataReader reader;
             DBConnection connection = new DBConnection();
             string sql_command;
+            int message_id;
+            int LecturerID;
            
             // Load the course details.
             sql_command = "SELECT * FROM Courses A, CourseTimes B WHERE B.id = " + TimeId + " AND A.id = B.courseId;";
@@ -48,7 +48,7 @@ namespace STT.Models
             ID = Convert.ToInt32(reader[0].ToString());
             Name = (string)reader[1];
             Class_Room = (string)reader[12];
-            Lecturer = Convert.ToInt32(reader[2]);
+            LecturerID = Convert.ToInt32(reader[2]);
             DateTime first_hour = DateTime.Parse("08:00");
             DateTime course_hour = DateTime.Parse((string)reader[10]);
             Start_time = course_hour.Subtract(first_hour).Hours;// (string)reader[10];
@@ -60,6 +60,13 @@ namespace STT.Models
                 is_lecture = true;
             reader.Close();
             
+            sql_command = "SELECT fName, lName, degree, email FROM Users WHERE id = " + LecturerID + ";";
+            reader = connection.queryExecute(sql_command);
+            reader.Read();
+            Lecturer = (string)reader["degree"] + " " + (string)reader["lName"] + " " + (string)reader["fName"];
+            email = (string)reader["email"];
+            reader.Close();
+            
             // Load the message of this course.
             sql_command = "SELECT id FROM Messages WHERE " + ID + "= courseID and publishDate >= '" + myDate + "' ORDER BY id DESC;";
             reader = connection.queryExecute(sql_command);
@@ -68,11 +75,17 @@ namespace STT.Models
                 message_id = Convert.ToInt32(reader["id"]);
                 _message = new Message(message_id);
             }
+            else
+                _message = null;
             reader.Close();
 
             // Load the exercise of this course.
-            _exercise = new Exercise();
-
+            d_today = DateTime.Now;
+            int day_today = (int)d_today.DayOfWeek + 1;
+            day_today = Day - day_today;
+            d_today = d_today.AddDays(day_today);
+            myDate = d_today.ToString("MM/dd/yyyy");
+            _exercise = new Exercise(myDate, ID);
         }
 
     }
